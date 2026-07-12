@@ -217,16 +217,20 @@
   var envClose = document.getElementById("envClose");
   var outroHint = document.getElementById("outroHint");
   if (closeBtn && outro && envClose) {
-    var sealed = false;
-    closeBtn.addEventListener("click", function(){
+    var sealed = false, sealing = false;
+    function sealInvitation(){
+      if (sealing || outro.style.display === "flex") return;
+      sealing = true;
       outro.style.display = "flex";
       document.body.style.overflow = "hidden";
       setTimeout(function(){ outro.style.opacity = "1"; }, 60);
       setTimeout(function(){ envClose.classList.add("closing"); }, 900);
-      setTimeout(function(){ sealed = true; if (outroHint) outroHint.textContent = "TAP TO REOPEN"; }, 3500);
-    });
+      setTimeout(function(){ sealed = true; sealing = false; if (outroHint) outroHint.textContent = "TAP TO REOPEN"; }, 3500);
+    }
+    closeBtn.addEventListener("click", sealInvitation);
     outro.addEventListener("click", function(){
       if (!sealed) return;
+      window.scrollTo(0, 0);
       outro.style.opacity = "0";
       document.body.style.overflow = "";
       setTimeout(function(){
@@ -236,6 +240,23 @@
         if (outroHint) outroHint.textContent = "SEALED WITH LOVE — SANKET & SNEHA";
       }, 1000);
     });
+    // auto-seal when the guest keeps scrolling past the very bottom
+    function pageOpen(){ return !document.getElementById("introOverlay") && outro.style.display !== "flex"; }
+    function atBottom(){ return window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 4; }
+    var overscroll = 0;
+    window.addEventListener("wheel", function(e){
+      if (!pageOpen()) return;
+      if (atBottom() && e.deltaY > 0) {
+        overscroll += e.deltaY;
+        if (overscroll > 140) { overscroll = 0; sealInvitation(); }
+      } else overscroll = 0;
+    }, {passive:true});
+    var touchStartY = null;
+    window.addEventListener("touchstart", function(e){ touchStartY = e.touches[0].clientY; }, {passive:true});
+    window.addEventListener("touchmove", function(e){
+      if (touchStartY === null || !pageOpen()) return;
+      if (atBottom() && touchStartY - e.touches[0].clientY > 80) { touchStartY = null; sealInvitation(); }
+    }, {passive:true});
   }
 })();
 </script></body></html>
