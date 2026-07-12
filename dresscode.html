@@ -277,5 +277,27 @@
 
   <a class="home-btn" href="index.html">&#8592;&nbsp; BACK TO INVITATION</a>
 </main>
+<audio id="dcMusic" src="assets/fashion.m4a" loop preload="auto"></audio>
+<button id="dcMusicToggle" type="button" aria-label="Toggle music" style="position:fixed;bottom:18px;right:18px;z-index:60;height:44px;width:44px;border-radius:9999px;background:rgba(255,255,255,.85);backdrop-filter:blur(4px);border:1px solid rgba(200,160,60,.5);box-shadow:0 2px 10px rgba(0,0,0,.15);font-size:18px;line-height:1;cursor:pointer">&#127925;</button>
+<script>
+(function(){
+  var m = document.getElementById('dcMusic');
+  var b = document.getElementById('dcMusicToggle');
+  function tryPlay(){
+    m.volume = 0.55;
+    m.play().then(function(){ b.textContent = '🎵'; b.style.opacity = '1'; }).catch(function(){ b.textContent = '🔇'; b.style.opacity = '.7'; });
+  }
+  tryPlay();
+  document.addEventListener('click', function h(e){
+    if (e.target === b) return;
+    if (m.paused) tryPlay();
+    document.removeEventListener('click', h);
+  });
+  b.addEventListener('click', function(){
+    if (m.paused) { m.play(); b.textContent = '🎵'; b.style.opacity = '1'; }
+    else { m.pause(); b.textContent = '🔇'; b.style.opacity = '.7'; }
+  });
+})();
+</script>
 </body>
 </html>
