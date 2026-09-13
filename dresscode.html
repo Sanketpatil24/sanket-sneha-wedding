@@ -76,8 +76,16 @@
   .ev-icon{
     width:74px;height:74px;border-radius:9999px;margin:0 auto;
     border:1.5px solid var(--gold);display:grid;place-items:center;
-    font-size:2rem;background:rgba(255,255,255,.55);
+    background:rgba(255,255,255,.55);
   }
+  .ev-icon svg{
+    width:38px;height:38px;stroke:currentColor;fill:none;stroke-width:1.55;
+    stroke-linecap:round;stroke-linejoin:round;
+  }
+  .haldi   .ev-icon{color:#a2701c}
+  .mehendi .ev-icon{color:#4a7a3c}
+  .sangeet .ev-icon{color:#6c3f8f}
+  .wedding .ev-icon{color:#b8404f}
   .ev-name{
     font-family:'Cormorant SC',serif;font-weight:600;letter-spacing:.14em;
     font-size:clamp(1.5rem,4.5vw,2.1rem);margin:12px 0 0;
@@ -124,13 +132,14 @@
 
   .who{
     display:inline-block;font-family:'Cormorant SC',serif;font-size:.62rem;
-    letter-spacing:.3em;font-weight:700;color:#fff;border-radius:6px;
-    padding:4px 14px;margin:18px 0 12px;
+    letter-spacing:.3em;font-weight:700;border-radius:9999px;
+    padding:4px 16px;margin:18px 0 12px;
+    background:rgba(255,255,255,.5);border:1px solid currentColor;
   }
-  .haldi  .who{background:#b2851f}
-  .mehendi .who{background:#5c8a4a}
-  .sangeet .who{background:#8a5eae}
-  .wedding .who{background:#c25667}
+  .haldi   .who{color:#a2701c}
+  .mehendi .who{color:#4a7a3c}
+  .sangeet .who{color:#6c3f8f}
+  .wedding .who{color:#b8404f}
 
   .outfits{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;max-width:820px;margin:0 auto}
   .outfit{
@@ -138,7 +147,15 @@
     background:rgba(255,255,255,.62);border:1px solid rgba(192,138,62,.35);
     box-shadow:0 4px 12px rgba(0,0,0,.07);
   }
-  .outfit .oi{font-size:1.7rem;line-height:1}
+  .outfit .oi{
+    display:block;width:34px;height:34px;margin:0 auto;
+    stroke:currentColor;fill:none;stroke-width:1.6;
+    stroke-linecap:round;stroke-linejoin:round;
+  }
+  .haldi   .outfit .oi{color:#a2701c}
+  .mehendi .outfit .oi{color:#4a7a3c}
+  .sangeet .outfit .oi{color:#6c3f8f}
+  .wedding .outfit .oi{color:#b8404f}
   .outfit .on{
     font-family:'Cormorant SC',serif;font-size:.66rem;letter-spacing:.06em;
     margin-top:8px;line-height:1.3;color:var(--maroon);
@@ -168,6 +185,98 @@
 </style>
 <link rel="icon" type="image/svg+xml" href="assets/favicon.svg"/><link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png"/><link rel="apple-touch-icon" href="assets/apple-touch-icon.png"/><meta name="theme-color" content="#7b1e2e"/><meta name="description" content="Dress code guide for Sanket &amp; Dr. Sneha's wedding — Haldi, Mehendi, Sangeet, Vidhi &amp; Wedding."/><meta property="og:type" content="website"/><meta property="og:url" content="https://sanket-sneha-wedding.vercel.app/dresscode.html"/><meta property="og:title" content="Dress Code — Sanket &amp; Dr. Sneha"/><meta property="og:description" content="Each celebration has its own vibe. Here is what to wear."/><meta property="og:image" content="https://sanket-sneha-wedding.vercel.app/assets/og-image.png"/><meta name="twitter:card" content="summary_large_image"/></head>
 <body>
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true"><defs>
+<symbol id="ev-mehendi" viewBox="0 0 48 48">
+  <path d="M24 41V22"/>
+  <path d="M24 22q-1-9 6-13 3 8-6 13z"/>
+  <path d="M24 26q-8-1-10-8 8-2 10 8z"/>
+  <path d="M24 33q7 0 9-6-7-1-9 6z"/>
+  <circle cx="24" cy="15" r="1.1"/><circle cx="18" cy="23" r="1"/><circle cx="30" cy="30" r="1"/>
+</symbol>
+<symbol id="ev-haldi" viewBox="0 0 48 48">
+  <circle cx="24" cy="24" r="4.5"/>
+  <path d="M24 19.5q-1.5-6 0-9.5 1.5 3.5 0 9.5zM24 28.5q1.5 6 0 9.5-1.5-3.5 0-9.5z"/>
+  <path d="M19.5 24q-6-1.5-9.5 0 3.5 1.5 9.5 0zM28.5 24q6 1.5 9.5 0-3.5-1.5-9.5 0z"/>
+  <path d="M20.8 20.8q-4.7-4-7.4-4.4 0.4 2.7 7.4 4.4zM27.2 27.2q4.7 4 7.4 4.4-.4-2.7-7.4-4.4z"/>
+  <path d="M27.2 20.8q4.7-4 7.4-4.4-.4 2.7-7.4 4.4zM20.8 27.2q-4.7 4-7.4 4.4.4-2.7 7.4-4.4z"/>
+</symbol>
+<symbol id="ev-sangeet" viewBox="0 0 48 48">
+  <path d="M15 14v17"/><path d="M32 11v17"/>
+  <path d="M15 14q8.5-3.5 17-3"/>
+  <ellipse cx="12" cy="32" rx="3.2" ry="2.6"/>
+  <ellipse cx="29" cy="29" rx="3.2" ry="2.6"/>
+  <path d="M20 38q4 2 8 0"/>
+  <path d="M36 20q3 1 3 3M39 34q2 .5 2 2"/>
+</symbol>
+<symbol id="ev-wedding" viewBox="0 0 48 48">
+  <path d="M24 5v4M22 7h4"/>
+  <path d="M24 9q-4 3-4 7h8q0-4-4-7z"/>
+  <path d="M17 16h14l2 4H15z"/>
+  <path d="M16 20v20M32 20v20"/>
+  <path d="M20 40V29q4-5 8 0v11"/>
+  <path d="M12 40h24"/>
+  <path d="M19 24h10"/>
+</symbol>
+<symbol id="ic-kurta" viewBox="0 0 48 48">
+  <path d="M18.5 9.5q5.5-3.2 11 0l6 4-3.2 5.6-2.3-1.6V39q-7.5 2-15 0V17.5l-2.3 1.6L9.5 13.5z"/>
+  <path d="M20.5 10q3.5 3.6 7 0"/>
+  <path d="M18 32v7M30 32v7"/>
+</symbol>
+<symbol id="ic-kurta-set" viewBox="0 0 48 48">
+  <path d="M18.5 7.5q5.5-3.2 11 0l5.6 3.8-3.1 5.4-2.2-1.5v13.3q-7.3 1.9-14.6 0V15.2l-2.2 1.5-3.1-5.4z"/>
+  <path d="M20.5 8q3.5 3.6 7 0"/>
+  <path d="M16.8 29.5 16.2 43h5.2l1.4-13M31.2 29.5 31.8 43h-5.2l-1.4-13"/>
+</symbol>
+<symbol id="ic-saree" viewBox="0 0 48 48">
+  <path d="M19.5 8.5q4.5-2.6 9 0v6.5h-9z"/>
+  <path d="M20.5 9q3.5 3.2 7 0"/>
+  <path d="M19.5 15q-6 11-8.5 27h26Q34.5 26 28.5 15z"/>
+  <path d="M28 9.5q5.5 1.2 7.5 5.5-1 9-4.5 15.5-2 4-2.5 11.5"/>
+  <path d="M14 35q10 3 20 0"/>
+</symbol>
+<symbol id="ic-lehenga" viewBox="0 0 48 48">
+  <path d="M19 8.5q5-2.6 10 0v5.5q-5 2-10 0z"/>
+  <path d="M20.5 9q3.5 3.2 7 0"/>
+  <path d="M19.5 19.5q-7 9-9.5 22.5h28Q35.5 28.5 28.5 19.5z"/>
+  <path d="M13.5 33q10.5 3.5 21 0"/>
+  <path d="M29.5 10q7 2.5 8.5 8.5"/>
+</symbol>
+<symbol id="ic-gown" viewBox="0 0 48 48">
+  <path d="M19.5 8.5q4.5-2.6 9 0v6q0 4.5-2 8 5.5 7.5 6.5 19.5h-18q1-12 6.5-19.5-2-3.5-2-8z"/>
+  <path d="M20.5 9q3.5 3.2 7 0"/>
+  <path d="M17.5 30q6.5 2.5 13 0"/>
+</symbol>
+<symbol id="ic-blazer" viewBox="0 0 48 48">
+  <path d="M18.5 9.5 11 14l-2.5 6 3.5 1.8V40h10M29.5 9.5 37 14l2.5 6-3.5 1.8V40H26"/>
+  <path d="M18.5 9.5 24 17.5l5.5-8"/>
+  <path d="M18.5 9.5 20 19l-3.5 6M29.5 9.5 28 19l3.5 6"/>
+  <path d="M22 40V26M26 40V26"/>
+</symbol>
+<symbol id="ic-bandhgala" viewBox="0 0 48 48">
+  <path d="M19 9.5q5-3 10 0l5.5 3.8-2.8 5.4-1.7-1.2V40q-6.5 1.8-13 0V17.5l-1.7 1.2-2.8-5.4z"/>
+  <path d="M20.5 9q1.5 3 3.5 3t3.5-3"/>
+  <path d="M20.5 12.5q3.5 2.6 7 0"/>
+  <path d="M24 15.5V40"/>
+  <path d="M21.6 21h.8M21.6 26h.8M21.6 31h.8"/>
+</symbol>
+<symbol id="ic-sherwani" viewBox="0 0 48 48">
+  <path d="M19 7.5q5-3 10 0l5.5 3.6-2.8 5.2-1.7-1.2v22.6q-6.5 1.8-13 0V15.1l-1.7 1.2-2.8-5.2z"/>
+  <path d="M20.5 7q1.5 3 3.5 3t3.5-3"/>
+  <path d="M24 13v24.5"/>
+  <path d="M21.7 18h.6M21.7 23h.6M21.7 28h.6M21.7 33h.6"/>
+  <path d="M17.6 37.5 17 44h14l-.6-6.5"/>
+</symbol>
+<symbol id="ic-saafa" viewBox="0 0 48 48">
+  <path d="M16.5 16.5q0-8 7.5-8t7.5 8"/>
+  <path d="M16 16.5q8-3.5 16 0 .5 3.5-1.5 4.8-6.5 2-13 0-2-1.3-1.5-4.8z"/>
+  <path d="M30.5 10.5q3.5-3 5.5-.5t-3 6.5"/>
+  <path d="M24 6.5V9"/>
+  <path d="M20.5 23.5q3.5 2.4 7 0v3.2q-3.5 1.8-7 0z"/>
+  <path d="M20.5 27q-4.5 2-5.5 6.5V43h18v-9.5q-1-4.5-5.5-6.5"/>
+  <path d="M24 28.5V43"/>
+</symbol>
+</defs></svg>
+
 <a class="back-link" href="index.html?open=1">&#8592;&nbsp;INVITATION</a>
 <main class="page">
 
@@ -180,7 +289,7 @@
 
   <!-- ================= MEHENDI ================= -->
   <section class="panel mehendi">
-    <div class="ev-icon">&#127807;</div>
+    <div class="ev-icon"><svg viewBox="0 0 48 48" aria-hidden="true"><use href="#ev-mehendi"/></svg></div>
     <h2 class="ev-name">MEHENDI</h2>
     <p class="ev-theme">Shades of Green</p>
     <p class="ev-tag">AN INFORMAL EVENING AT HOME</p>
@@ -202,7 +311,7 @@
 
   <!-- ================= HALDI ================= -->
   <section class="panel haldi">
-    <div class="ev-icon">&#127804;</div>
+    <div class="ev-icon"><svg viewBox="0 0 48 48" aria-hidden="true"><use href="#ev-haldi"/></svg></div>
     <h2 class="ev-name">HALDI</h2>
     <p class="ev-theme">Boho Pastels</p>
     <p class="ev-desc">Soft, breezy and beautiful. Think morning sunshine, florals and gentle pastel tones.</p>
@@ -222,20 +331,20 @@
     <p class="sub-label">OUTFIT INSPIRATION</p>
     <span class="who">WOMEN</span>
     <div class="outfits">
-      <div class="outfit"><div class="oi">&#128087;</div><div class="on">Churidar</div></div>
-      <div class="outfit"><div class="oi">&#129403;</div><div class="on">Salwar Kameez</div></div>
+      <div class="outfit"><svg class="oi" viewBox="0 0 48 48" role="img" aria-label="Churidar"><use href="#ic-kurta-set"/></svg><div class="on">Churidar</div></div>
+      <div class="outfit"><svg class="oi" viewBox="0 0 48 48" role="img" aria-label="Salwar Kameez"><use href="#ic-kurta-set"/></svg><div class="on">Salwar Kameez</div></div>
     </div>
     <p class="ev-note">Pastel shades, please &#9825;</p>
     <span class="who">MEN</span>
     <div class="outfits">
-      <div class="outfit"><div class="oi">&#127800;</div><div class="on">Floral Kurta</div></div>
-      <div class="outfit"><div class="oi">&#128088;</div><div class="on">Yellow Kurta</div></div>
+      <div class="outfit"><svg class="oi" viewBox="0 0 48 48" role="img" aria-label="Floral Kurta"><use href="#ic-kurta"/></svg><div class="on">Floral Kurta</div></div>
+      <div class="outfit"><svg class="oi" viewBox="0 0 48 48" role="img" aria-label="Yellow Kurta"><use href="#ic-kurta"/></svg><div class="on">Yellow Kurta</div></div>
     </div>
   </section>
 
   <!-- ================= SANGEET ================= -->
   <section class="panel sangeet">
-    <div class="ev-icon">&#129705;</div>
+    <div class="ev-icon"><svg viewBox="0 0 48 48" aria-hidden="true"><use href="#ev-sangeet"/></svg></div>
     <h2 class="ev-name">SANGEET</h2>
     <p class="ev-theme">Sparkle &amp; Glam</p>
     <p class="ev-desc">Time to shine and dance the night away! Bring on the sparkle, sequins and statement looks.</p>
@@ -253,25 +362,25 @@
     <p class="sub-label">OUTFIT INSPIRATION</p>
     <span class="who">WOMEN</span>
     <div class="outfits">
-      <div class="outfit"><div class="oi">&#128131;</div><div class="on">Shimmery Gown</div></div>
-      <div class="outfit"><div class="oi">&#128142;</div><div class="on">Lehenga</div></div>
-      <div class="outfit"><div class="oi">&#129403;</div><div class="on">Salwar Kameez</div></div>
-      <div class="outfit"><div class="oi">&#10024;</div><div class="on">Shimmery Saree</div></div>
+      <div class="outfit"><svg class="oi" viewBox="0 0 48 48" role="img" aria-label="Shimmery Gown"><use href="#ic-gown"/></svg><div class="on">Shimmery Gown</div></div>
+      <div class="outfit"><svg class="oi" viewBox="0 0 48 48" role="img" aria-label="Lehenga"><use href="#ic-lehenga"/></svg><div class="on">Lehenga</div></div>
+      <div class="outfit"><svg class="oi" viewBox="0 0 48 48" role="img" aria-label="Salwar Kameez"><use href="#ic-kurta-set"/></svg><div class="on">Salwar Kameez</div></div>
+      <div class="outfit"><svg class="oi" viewBox="0 0 48 48" role="img" aria-label="Shimmery Saree"><use href="#ic-saree"/></svg><div class="on">Shimmery Saree</div></div>
     </div>
     <span class="who">MEN</span>
     <div class="outfits">
-      <div class="outfit"><div class="oi">&#129509;</div><div class="on">Sequin Blazer</div></div>
-      <div class="outfit"><div class="oi">&#10024;</div><div class="on">Shimmer Blazer</div></div>
-      <div class="outfit"><div class="oi">&#129509;</div><div class="on">Velvet Blazer</div></div>
-      <div class="outfit"><div class="oi">&#128084;</div><div class="on">Blazer with Trousers</div></div>
-      <div class="outfit"><div class="oi">&#127913;</div><div class="on">Indo-Western Jacket Set</div></div>
-      <div class="outfit"><div class="oi">&#127775;</div><div class="on">Shimmery Kurta</div></div>
+      <div class="outfit"><svg class="oi" viewBox="0 0 48 48" role="img" aria-label="Sequin Blazer"><use href="#ic-blazer"/></svg><div class="on">Sequin Blazer</div></div>
+      <div class="outfit"><svg class="oi" viewBox="0 0 48 48" role="img" aria-label="Shimmer Blazer"><use href="#ic-blazer"/></svg><div class="on">Shimmer Blazer</div></div>
+      <div class="outfit"><svg class="oi" viewBox="0 0 48 48" role="img" aria-label="Velvet Blazer"><use href="#ic-blazer"/></svg><div class="on">Velvet Blazer</div></div>
+      <div class="outfit"><svg class="oi" viewBox="0 0 48 48" role="img" aria-label="Blazer with Trousers"><use href="#ic-blazer"/></svg><div class="on">Blazer with Trousers</div></div>
+      <div class="outfit"><svg class="oi" viewBox="0 0 48 48" role="img" aria-label="Indo-Western Jacket Set"><use href="#ic-bandhgala"/></svg><div class="on">Indo-Western Jacket Set</div></div>
+      <div class="outfit"><svg class="oi" viewBox="0 0 48 48" role="img" aria-label="Shimmery Kurta"><use href="#ic-kurta"/></svg><div class="on">Shimmery Kurta</div></div>
     </div>
   </section>
 
   <!-- ================= WEDDING DAY ================= -->
   <section class="panel wedding">
-    <div class="ev-icon">&#128725;</div>
+    <div class="ev-icon"><svg viewBox="0 0 48 48" aria-hidden="true"><use href="#ev-wedding"/></svg></div>
     <h2 class="ev-name">VIDHI &amp; WEDDING</h2>
     <p class="ev-theme">Royal Maharashtrian Theme</p>
     <p class="ev-desc">Rooted in tradition, draped in royalty. Celebrate in rich weaves, heritage silhouettes and timeless elegance.</p>
@@ -290,19 +399,19 @@
     <p class="sub-label">OUTFIT INSPIRATION</p>
     <span class="who">WOMEN</span>
     <div class="outfits">
-      <div class="outfit"><div class="oi">&#129403;</div><div class="on">Paithani Saree</div></div>
-      <div class="outfit"><div class="oi">&#129719;</div><div class="on">Nauvari Saree</div></div>
-      <div class="outfit"><div class="oi">&#127802;</div><div class="on">Silk Saree</div></div>
-      <div class="outfit"><div class="oi">&#128081;</div><div class="on">Kanjeevaram Saree</div></div>
+      <div class="outfit"><svg class="oi" viewBox="0 0 48 48" role="img" aria-label="Paithani Saree"><use href="#ic-saree"/></svg><div class="on">Paithani Saree</div></div>
+      <div class="outfit"><svg class="oi" viewBox="0 0 48 48" role="img" aria-label="Nauvari Saree"><use href="#ic-saree"/></svg><div class="on">Nauvari Saree</div></div>
+      <div class="outfit"><svg class="oi" viewBox="0 0 48 48" role="img" aria-label="Silk Saree"><use href="#ic-saree"/></svg><div class="on">Silk Saree</div></div>
+      <div class="outfit"><svg class="oi" viewBox="0 0 48 48" role="img" aria-label="Kanjeevaram Saree"><use href="#ic-saree"/></svg><div class="on">Kanjeevaram Saree</div></div>
     </div>
     <p class="ev-note">Sarees for the ladies, please &#9825;</p>
     <span class="who">MEN</span>
     <div class="outfits">
-      <div class="outfit"><div class="oi">&#129333;</div><div class="on">Sherwani with Dhoti</div></div>
-      <div class="outfit"><div class="oi">&#129507;</div><div class="on">Sherwani with Stole</div></div>
-      <div class="outfit"><div class="oi">&#128088;</div><div class="on">Kurta with Dhoti</div></div>
-      <div class="outfit"><div class="oi">&#128115;</div><div class="on">Sherwani with Saafa</div></div>
-      <div class="outfit"><div class="oi">&#10024;</div><div class="on">Sherwani</div></div>
+      <div class="outfit"><svg class="oi" viewBox="0 0 48 48" role="img" aria-label="Sherwani with Dhoti"><use href="#ic-sherwani"/></svg><div class="on">Sherwani with Dhoti</div></div>
+      <div class="outfit"><svg class="oi" viewBox="0 0 48 48" role="img" aria-label="Sherwani with Stole"><use href="#ic-sherwani"/></svg><div class="on">Sherwani with Stole</div></div>
+      <div class="outfit"><svg class="oi" viewBox="0 0 48 48" role="img" aria-label="Kurta with Dhoti"><use href="#ic-kurta"/></svg><div class="on">Kurta with Dhoti</div></div>
+      <div class="outfit"><svg class="oi" viewBox="0 0 48 48" role="img" aria-label="Sherwani with Saafa"><use href="#ic-saafa"/></svg><div class="on">Sherwani with Saafa</div></div>
+      <div class="outfit"><svg class="oi" viewBox="0 0 48 48" role="img" aria-label="Sherwani"><use href="#ic-sherwani"/></svg><div class="on">Sherwani</div></div>
     </div>
   </section>
 
