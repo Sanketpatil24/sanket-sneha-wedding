@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sanket and Dr. Sneha//Wedding//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Sanket & Dr. Sneha — Wedding
+BEGIN:VEVENT
+UID:day1@sanket-sneha-wedding
+DTSTAMP:20260101T000000Z
+DTSTART:20261124T123000Z
+DTEND:20261124T173000Z
+SUMMARY:Sanket & Dr. Sneha — Haldi, Ring Ceremony & Sangeet
+LOCATION:Marigold Banquets, Pune, Maharashtra
+DESCRIPTION:Day One\n\n6:00 PM — Haldi\n8:00 PM — Ring Ceremony & San
+ geet\n\nDress code: sanket-sneha-wedding.vercel.app/dresscode.html
+URL:https://sanket-sneha-wedding.vercel.app/
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Tomorrow: Sanket & Dr. Sneha — Haldi, Ring Ceremony & Sange
+ et
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:day2@sanket-sneha-wedding
+DTSTAMP:20260101T000000Z
+DTSTART:20261125T023000Z
+DTEND:20261125T113000Z
+SUMMARY:Sanket & Dr. Sneha — Wedding Day
+LOCATION:Marigold Banquets, Pune, Maharashtra
+DESCRIPTION:Day Two\n\n8:00 AM — Vidhi\n11:26 AM — Wedding Mahurat\n2
+ :00 PM — Reception\n\nDress code: sanket-sneha-wedding.vercel.app/dres
+ scode.html
+URL:https://sanket-sneha-wedding.vercel.app/
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Tomorrow: Sanket & Dr. Sneha — Wedding Day
+END:VALARM
+END:VEVENT
+END:VCALENDAR
