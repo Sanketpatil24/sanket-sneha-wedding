@@ -69,6 +69,7 @@
     position:relative;
   }
   .panel.haldi{background:linear-gradient(180deg,#fdf6dd,#faeec9)}
+  .panel.mehendi{background:linear-gradient(180deg,#eef7e4,#ddeecd)}
   .panel.sangeet{background:linear-gradient(180deg,#f6eefa,#eee0f4)}
   .panel.wedding{background:linear-gradient(180deg,#fdeee0,#fbe3cf)}
 
@@ -82,19 +83,33 @@
     font-size:clamp(1.5rem,4.5vw,2.1rem);margin:12px 0 0;
   }
   .haldi  .ev-name{color:#a2701c}
+  .mehendi .ev-name{color:#4a7a3c}
   .sangeet .ev-name{color:#6c3f8f}
   .wedding .ev-name{color:#b8404f}
   .ev-theme{font-family:'Great Vibes',cursive;font-size:clamp(1.4rem,4vw,1.9rem);margin:2px 0 0}
   .haldi  .ev-theme{color:#c2547a}
+  .mehendi .ev-theme{color:#6a9a55}
   .sangeet .ev-theme{color:#8a5eae}
   .wedding .ev-theme{color:#d4687a}
   .ev-desc{max-width:430px;margin:12px auto 0;font-size:1.1rem;font-style:italic;line-height:1.5}
+  .ev-tag{
+    display:inline-block;margin:10px auto 0;
+    font-family:'Cormorant SC',serif;font-size:.58rem;letter-spacing:.24em;
+    font-weight:600;color:#4a7a3c;
+    border:1px solid rgba(74,122,60,.45);border-radius:9999px;
+    padding:5px 14px;background:rgba(255,255,255,.55);
+  }
+  .ev-note{
+    max-width:440px;margin:16px auto 0;font-size:1rem;font-style:italic;
+    line-height:1.5;color:var(--maroon);opacity:.92;
+  }
 
   .sub-label{
     font-family:'Cormorant SC',serif;font-size:.8rem;letter-spacing:.28em;
     font-weight:600;margin:26px 0 14px;
   }
   .haldi  .sub-label{color:#a2701c}
+  .mehendi .sub-label{color:#4a7a3c}
   .sangeet .sub-label{color:#6c3f8f}
   .wedding .sub-label{color:#b8404f}
 
@@ -112,6 +127,8 @@
     letter-spacing:.3em;font-weight:700;color:#fff;border-radius:6px;
     padding:4px 14px;margin:18px 0 12px;
   }
+  .haldi  .who{background:#b2851f}
+  .mehendi .who{background:#5c8a4a}
   .sangeet .who{background:#8a5eae}
   .wedding .who{background:#c25667}
 
@@ -181,14 +198,39 @@
     </div>
 
     <p class="sub-label">OUTFIT INSPIRATION</p>
+    <span class="who">WOMEN</span>
     <div class="outfits">
-      <div class="outfit"><div class="oi">&#129403;</div><div class="on">Flowy Kurta Set</div></div>
-      <div class="outfit"><div class="oi">&#127802;</div><div class="on">Floral Co-ord Set</div></div>
-      <div class="outfit"><div class="oi">&#129509;</div><div class="on">Indo-Western Kurta</div></div>
-      <div class="outfit"><div class="oi">&#128086;</div><div class="on">Short Kurta with Pants</div></div>
-      <div class="outfit"><div class="oi">&#127800;</div><div class="on">Floral Lehenga</div></div>
-      <div class="outfit"><div class="oi">&#128087;</div><div class="on">Anarkali with Dupatta</div></div>
+      <div class="outfit"><div class="oi">&#128087;</div><div class="on">Churidar</div></div>
+      <div class="outfit"><div class="oi">&#129403;</div><div class="on">Salwar Kameez</div></div>
     </div>
+    <p class="ev-note">Pastel shades, please &#9825;</p>
+    <span class="who">MEN</span>
+    <div class="outfits">
+      <div class="outfit"><div class="oi">&#127800;</div><div class="on">Floral Kurta</div></div>
+      <div class="outfit"><div class="oi">&#128088;</div><div class="on">Yellow Kurta</div></div>
+    </div>
+  </section>
+
+  <!-- ================= MEHENDI ================= -->
+  <section class="panel mehendi">
+    <div class="ev-icon">&#127807;</div>
+    <h2 class="ev-name">MEHENDI</h2>
+    <p class="ev-theme">Shades of Green</p>
+    <p class="ev-tag">AN INFORMAL EVENING AT HOME</p>
+    <p class="ev-desc">Henna, music and a little mischief, just with our closest. Come dressed in your favourite green.</p>
+
+    <p class="sub-label">COLOURS</p>
+    <div class="swatches">
+      <div class="swatch"><div class="dot" style="background:#6b8e23"></div><div class="nm">Mehendi Green</div></div>
+      <div class="swatch"><div class="dot" style="background:#2e8b57"></div><div class="nm">Emerald</div></div>
+      <div class="swatch"><div class="dot" style="background:#a9b585"></div><div class="nm">Sage</div></div>
+      <div class="swatch"><div class="dot" style="background:#808000"></div><div class="nm">Olive</div></div>
+      <div class="swatch"><div class="dot" style="background:#a8d5ba"></div><div class="nm">Mint</div></div>
+      <div class="swatch"><div class="dot" style="background:#14532d"></div><div class="nm">Bottle Green</div></div>
+    </div>
+
+    <p class="sub-label">OUTFIT INSPIRATION</p>
+    <p class="ev-note">Any green outfit &mdash; pick the shade you love.</p>
   </section>
 
   <!-- ================= SANGEET ================= -->
@@ -211,27 +253,26 @@
     <p class="sub-label">OUTFIT INSPIRATION</p>
     <span class="who">WOMEN</span>
     <div class="outfits">
-      <div class="outfit"><div class="oi">&#128131;</div><div class="on">Sequin Gown</div></div>
-      <div class="outfit"><div class="oi">&#10024;</div><div class="on">Shimmer Saree</div></div>
-      <div class="outfit"><div class="oi">&#128142;</div><div class="on">Embellished Lehenga</div></div>
-      <div class="outfit"><div class="oi">&#127775;</div><div class="on">Sparkle Gown</div></div>
-      <div class="outfit"><div class="oi">&#128090;</div><div class="on">Co-ord Set</div></div>
+      <div class="outfit"><div class="oi">&#128131;</div><div class="on">Shimmery Gown</div></div>
+      <div class="outfit"><div class="oi">&#128142;</div><div class="on">Lehenga</div></div>
+      <div class="outfit"><div class="oi">&#129403;</div><div class="on">Salwar Kameez</div></div>
+      <div class="outfit"><div class="oi">&#10024;</div><div class="on">Shimmery Saree</div></div>
     </div>
     <span class="who">MEN</span>
     <div class="outfits">
       <div class="outfit"><div class="oi">&#129509;</div><div class="on">Sequin Blazer</div></div>
-      <div class="outfit"><div class="oi">&#129333;</div><div class="on">Tuxedo</div></div>
       <div class="outfit"><div class="oi">&#10024;</div><div class="on">Shimmer Blazer</div></div>
       <div class="outfit"><div class="oi">&#129509;</div><div class="on">Velvet Blazer</div></div>
       <div class="outfit"><div class="oi">&#128084;</div><div class="on">Blazer with Trousers</div></div>
       <div class="outfit"><div class="oi">&#127913;</div><div class="on">Indo-Western Jacket Set</div></div>
+      <div class="outfit"><div class="oi">&#127775;</div><div class="on">Shimmery Kurta</div></div>
     </div>
   </section>
 
   <!-- ================= WEDDING DAY ================= -->
   <section class="panel wedding">
     <div class="ev-icon">&#128725;</div>
-    <h2 class="ev-name">WEDDING DAY</h2>
+    <h2 class="ev-name">VIDHI &amp; WEDDING</h2>
     <p class="ev-theme">Royal Maharashtrian Theme</p>
     <p class="ev-desc">Rooted in tradition, draped in royalty. Celebrate in rich weaves, heritage silhouettes and timeless elegance.</p>
 
@@ -250,11 +291,11 @@
     <span class="who">WOMEN</span>
     <div class="outfits">
       <div class="outfit"><div class="oi">&#129403;</div><div class="on">Paithani Saree</div></div>
-      <div class="outfit"><div class="oi">&#129754;</div><div class="on">Nauvari Saree</div></div>
+      <div class="outfit"><div class="oi">&#129719;</div><div class="on">Nauvari Saree</div></div>
       <div class="outfit"><div class="oi">&#127802;</div><div class="on">Silk Saree</div></div>
-      <div class="outfit"><div class="oi">&#128087;</div><div class="on">Lehenga</div></div>
       <div class="outfit"><div class="oi">&#128081;</div><div class="on">Kanjeevaram Saree</div></div>
     </div>
+    <p class="ev-note">Sarees for the ladies, please &#9825;</p>
     <span class="who">MEN</span>
     <div class="outfits">
       <div class="outfit"><div class="oi">&#129333;</div><div class="on">Sherwani with Dhoti</div></div>
@@ -266,10 +307,10 @@
   </section>
 
   <div class="mantras">
-    <span class="m"><span class="lotus">&#129754;</span> Embrace the vibe</span>
-    <span class="m"><span class="lotus">&#129754;</span> Dress to express</span>
-    <span class="m"><span class="lotus">&#129754;</span> Be comfortable</span>
-    <span class="m"><span class="lotus">&#129754;</span> Most importantly, be you!</span>
+    <span class="m"><span class="lotus">&#129719;</span> Embrace the vibe</span>
+    <span class="m"><span class="lotus">&#129719;</span> Dress to express</span>
+    <span class="m"><span class="lotus">&#129719;</span> Be comfortable</span>
+    <span class="m"><span class="lotus">&#129719;</span> Most importantly, be you!</span>
   </div>
 
   <p class="closing">We can&rsquo;t wait to celebrate these moments with you! &#9825;</p>
